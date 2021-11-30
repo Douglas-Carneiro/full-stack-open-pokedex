@@ -3,6 +3,9 @@ name: Periodic Health Check
 on:
   schedule:
     - cron:  '1 12,13 * * *'
+  push:
+    branches:
+      - master
 
 jobs:
   health_check:
